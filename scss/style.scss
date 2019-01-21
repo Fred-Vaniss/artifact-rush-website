@@ -1,1 +1,11 @@
-@import 'html'
+// Importation des morceaux de codes SCSS
+@import 'functions';
+@import 'style-reset';
+@import 'html';
+
+
+
+@media screen and (max-width: 768px){
+    //La partie desktop se fera sur un autre fichier SCSS qui sera importé ici
+    @import 'style-desktop';
+} 
