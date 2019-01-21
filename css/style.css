@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
+@font-face {
+  font-family: "Andalus";
+  src: url(../fonts/andlso.ttf) format("truetype");
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+/*# sourceMappingURL=style.css.map */
