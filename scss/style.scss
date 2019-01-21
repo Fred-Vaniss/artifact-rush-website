@@ -3,7 +3,34 @@
 @import 'style-reset';
 @import 'html';
 
+.wrapper{
+    margin: 0 em(15);
+}
 
+// Barre de navigation
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: inline-block;
+
+    height: em(70);
+    width: 100vw;
+
+    background-color: #222222;
+    .titre{
+        float: left;
+        font-family: 'Andalus', serif;
+        color: #fed136;
+        text-decoration: none;
+        font-size: em(42);
+    }
+    .navBar{
+        display: flex;
+        align-content: center;
+    }
+}
 
 @media screen and (max-width: 768px){
     //La partie desktop se fera sur un autre fichier SCSS qui sera importé ici
