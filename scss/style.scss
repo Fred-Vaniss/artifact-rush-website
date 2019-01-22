@@ -6,31 +6,78 @@
 .wrapper{
     margin: 0 em(15);
 }
-
+// ========================================================
 // Barre de navigation
+// ========================================================
+
 header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 
     display: inline-block;
 
     height: em(70);
-    width: 100vw;
+    width: 100%;
 
     background-color: #222222;
-    .titre{
-        float: left;
-        font-family: 'Andalus', serif;
-        color: #fed136;
-        text-decoration: none;
-        font-size: em(42);
-    }
-    .navBar{
-        display: flex;
-        align-content: center;
-    }
+    border-bottom: 1px solid #888;
 }
+.titre{
+    float: left;
+    font-family: 'Andalus', serif;
+    color: #fed136;
+    text-decoration: none;
+    font-size: em(42);
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.navMenuButton{
+    height: em(37);
+    width: em(75);
+    background-color: #fed136;
+    border: none;
+    border-radius: em(4);
+}
+nav{
+    display: none; /* Menu caché dans la version mobile */
+    // display: inline-block;
+    position: fixed;
+    top: em(70);
+    right: 0;
+
+    background-color: #222222;
+
+    height: 100vh;
+    width: em(250);
+
+    ul {
+        display: inline-block;
+        
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            margin-left: em(10);
+            margin-top: em(20);
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: em(38);
+            }
+        }
+    }
+
+}
+
+// ========================================================
+// Barre de navigation
+// ========================================================
 
 @media screen and (max-width: 768px){
     //La partie desktop se fera sur un autre fichier SCSS qui sera importé ici
