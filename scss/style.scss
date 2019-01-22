@@ -227,6 +227,27 @@ nav{
 	}
 }
 
+// ========================================================
+// Affichage pour les écrans plus petit que 350px (iPhone 5)
+// ========================================================
+
+@media screen and (max-width: 350px){
+	.navMenuButton {
+		padding: em(12,13) em(18,13);
+		span{
+			display: none;
+		}
+	} 
+
+	h2{
+		font-size: em(30);
+	}
+
+	#jouer a{
+		padding: em(15,16) em(20,16)
+	}
+}
+
 
 
 // ========================================================
