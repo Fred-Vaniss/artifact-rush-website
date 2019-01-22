@@ -184,6 +184,44 @@ nav{
 }
 
 // ========================================================
+// Jouer sur Tabletop Simulator
+// ========================================================
+
+#jouer{
+	background-color: #222;
+	text-align: center;
+	h2, p{
+		color: white;
+	}
+	h2{
+		margin-bottom: em(15,40);
+	}
+	a{
+		font-size: em(20);
+		font-weight: 700;
+		text-decoration: none;
+		color: #000;
+		text-transform: uppercase;
+
+		padding: em(20,20) em(35,20);
+	}
+}
+
+.steamFrame{
+	margin: 0 auto;
+	max-width: em(646);
+	vertical-align: middle;
+
+	margin-top: em(10);
+	margin-bottom: em(18);
+	iframe{
+		width: 100%;
+	}
+}
+
+
+
+// ========================================================
 // Affichage bureau
 // ========================================================
 

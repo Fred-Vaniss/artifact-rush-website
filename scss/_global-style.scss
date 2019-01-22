@@ -3,7 +3,7 @@
 	height: 100%;
 }
 
-button{
+button, .yelButton{
     background-color: #fed136;
     border: none;
     border-radius: em(4);
@@ -65,6 +65,3 @@ p{
     display: none;
 }
 
-.steamFrame{
-	display: none;
-}
