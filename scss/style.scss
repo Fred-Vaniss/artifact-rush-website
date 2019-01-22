@@ -146,7 +146,32 @@ nav{
 }
 
 
+// ========================================================
+// Contenu
+// ========================================================
 
+#contenu{
+	padding: em(100) 0;
+	background-color: #eee;
+}
+
+.contenu{
+	article{
+		text-align: center;
+		margin-bottom: em(50);
+		img{
+			border: 7px solid white;
+			border-radius: 50%;
+		}
+		h4{
+			font-size: em(18);
+			font-weight: 700;
+			color: #333;
+
+			margin-top: em(25);
+		}
+	}
+}
 
 
 // ========================================================
