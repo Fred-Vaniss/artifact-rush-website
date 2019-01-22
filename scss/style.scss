@@ -84,7 +84,6 @@ nav{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-
 }
 
 .intro{
@@ -94,12 +93,12 @@ nav{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
 
-.imgCont{
-	max-width: em(432);
-	img{
-		width: 100%;
+	.imgCont{
+		max-width: em(432);
+		img{
+			width: 100%;
+		}
 	}
 }
 	
@@ -109,9 +108,8 @@ nav{
 	font-size: em(50);
 
 	position: absolute;
-	bottom: em(2);
+	bottom: 0;
 
-	animation-delay: 5s;
 	animation-iteration-count: infinite;
 }
 
@@ -153,6 +151,7 @@ nav{
 	article{
 		text-align: center;
 		margin-bottom: em(50);
+		max-width: em(360);
 		img{
 			border: 7px solid white;
 			border-radius: 50%;
@@ -165,6 +164,9 @@ nav{
 // ========================================================
 
 #portfolio{
+	.flex-articles{
+		justify-content: space-around;
+	}
 	article{
 		position: relative;
 		margin-bottom: em(30);
@@ -179,6 +181,12 @@ nav{
 			position: absolute;
 			right: 0;
 			bottom: em(14);
+		}
+		.imgCont{
+			max-width: em(360);
+			img{
+				width: 100%;
+			}
 		}
 	}
 }
@@ -197,13 +205,13 @@ nav{
 		margin-bottom: em(15,40);
 	}
 	a{
-		font-size: em(20);
+		font-size: em(16);
 		font-weight: 700;
 		text-decoration: none;
 		color: #000;
 		text-transform: uppercase;
 
-		padding: em(20,20) em(35,20);
+		padding: em(20,16) em(35,16);
 	}
 }
 
@@ -226,7 +234,7 @@ nav{
 // ========================================================
 
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     //La partie desktop se fera sur un autre fichier SCSS qui sera importé ici
     @import 'style-desktop';
 } 
