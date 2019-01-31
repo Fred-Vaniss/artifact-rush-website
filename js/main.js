@@ -6,6 +6,18 @@ var id = document.getElementById.bind(document);
 var clas = document.getElementsByClassName.bind(document);
 var tag = document.getElementsByTagName.bind(document);
 var body = document.getElementsByTagName("body")[0];
+
+/////////////////////////////////////////////////////
+// Affichage du menu
+//
+
+const menu = tag("nav")[0];
+
+function showMenu(){
+    log("click")
+    menu.classList.toggle("dispMenu");
+}
+
 /////////////////////////////////////////////////////
 // Affichage du modal box
 //
