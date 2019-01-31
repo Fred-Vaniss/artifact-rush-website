@@ -96,7 +96,7 @@
                     </div>
                     <h4>La conception du plateau</h4>
                     <p>Adobe Photoshop</p>
-                    <button class="yelButton">En savoir plus <i class="fas fa-arrow-up"></i></button>
+                    <button class="yelButton" onclick='toggleModal("modBox1")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
                 </article>
                 <article>
                     <div class="imgCont">
@@ -104,7 +104,7 @@
                     </div>
                     <h4>Création des cartes</h4>
                     <p>Adobe Photoshop</p>
-                    <button class="yelButton">En savoir plus <i class="fas fa-arrow-up"></i></button>
+                    <button class="yelButton" onclick='toggleModal("modBox2")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
                 </article>
                 <article>
                     <div class="imgCont">
@@ -112,7 +112,7 @@
                     </div>
                     <h4>Création des pions</h4>
                     <p>Photoshop et Blender</p>
-                    <button class="yelButton">En savoir plus <i class="fas fa-arrow-up"></i></button>
+                    <button class="yelButton" onclick='toggleModal("modBox3")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
                 </article>
                 <article>
                     <div class="imgCont">
@@ -161,11 +161,35 @@
     <!-- =================================================== -->
 
     <article class="modalBox" id="modBox1">
+        <button class="modal-close-btn" onclick='toggleModal("modBox1")'><i class="far fa-times-circle"></i></button>
         <div class="modal-wrapper">
-            <button class="modal-close-btn"><i class="far fa-times-circle"></i></button>
             <h2>La conception de mon plateau</h2>
             <img src="img/portfolio/plateau.png" alt="">
             <p>La conception de mon plateau s'est faite en plusieurs étapes, d'abord j'ai créé les cases à l'aide d'Adobe Illustrator pour avoir de belles courbes tout au long des cases. Ensuite à l'aide de Blender, j'ai fait un rendu de l'herbe sur un fond transparent dont j'ai ensuite dupliqué sur tout le chemin pour avoir un résultat homogène et bien intégré au décor.</p>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox1")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
+
+    <article class="modalBox" id="modBox2">
+        <button class="modal-close-btn" onclick='toggleModal("modBox2")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>Création des cartes</h2>
+            <img src="img/portfolio/dessins.png" alt="">
+            <p>Les illustrations sont dessinées à la main à l'aide d'une tablette graphique Wacom Bamboo. Les coloriages sont faits sur un calque séparé et des ombres et lumières sont appliquées grâce à un calque en lumière tamisée à 75%.</p>
+            <img src="img/portfolio/dessins2.png" alt="">
+            <button class="modal-close-bottom" onclick='toggleModal("modBox2")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
+    
+    <article class="modalBox" id="modBox3">
+        <button class="modal-close-btn" onclick='toggleModal("modBox3")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>Création des pions</h2>
+            <img src="img/portfolio/pion1.png" alt="">
+            <p>Après avoir dessiné le personnage, j'ai créé une extrusion 3D via Photoshop qui me servira de modèle 3D pour Blender.</p>
+            <img src="img/portfolio/pion2.png" alt="">
+            <p>Ensuite, sur Blender, j'ai ajusté l'épaisseur de l'illustration et modélisé le socle où elle sera posée.</p>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox3")'><i class="fas fa-times"></i> Fermer</button>
         </div>
     </article>
 

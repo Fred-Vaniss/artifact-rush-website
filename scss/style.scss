@@ -231,61 +231,7 @@ nav{
 // Modal boxes
 // ========================================================
 
-.modalBox{
-	z-index: 2;
-
-	width: 100%;
-	max-height: 100%;
-	background-color: rgba(0, 0, 0, 0.74);
-
-	position: fixed;
-	top: 0;
-	left: 0;
-
-	// overflow-y: hidden;
-
-    // opacity: 0;
-    // visibility: hidden;
-    // transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-
-	overflow: auto;
-}
-
-.modal-wrapper{
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 15px;
-
-    background-color: #fff;
-
-    // transform: translateY(100px);
-    // transition: transform 0.25s;
-
-	// position: relative;
-	
-	img{
-		width: 100%;
-	}
-
-	h2{
-		margin-top: em(60,40);
-		margin-bottom: em(50,40);
-	}
-}
-
-.modal-close-btn{
-	background: none;
-	border: none;
-	font-size: em(50);
-
-	position: fixed;
-	top: em(2);
-	right: em(2);
-}
-
-.modal-close-btn:hover{
-	
-}
+@import 'modal';
 
 // ========================================================
 // Affichage pour les écrans plus petit que 350px (iPhone 5)
