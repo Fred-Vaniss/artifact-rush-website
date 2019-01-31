@@ -43,13 +43,13 @@ nav{
     // display: inline-block;
     position: fixed;
     top: em(70);
-	right: em(-300);
+	right: em(-275);
 	text-align: right;
 
     background-color: #222222;
 
     height: 100vh;
-	width: em(300);
+	width: em(275);
 	
 	transition: transform 0.5s;
 
@@ -74,7 +74,7 @@ nav{
 }
 
 .dispMenu{
-	transform: translateX(em(-300));
+	transform: translateX(em(-275));
 	transition: transform 0.5s;
 }
 

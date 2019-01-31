@@ -4,3 +4,31 @@
     margin: 0 auto;
 }
 
+.navMenuButton{
+    display: none;
+}
+
+nav{
+    position: static;
+    background-color: transparent;
+    width: unset;
+    height: unset;
+
+    transform: unset;
+    transition: none;
+
+    ul{
+        // display: inline;
+        li{
+            display: inline;
+            a{
+                font-size: em(16);
+            }
+        }
+    }
+}
+
+.dispMenu{
+    transform: unset;
+    transition: unset;
+}
