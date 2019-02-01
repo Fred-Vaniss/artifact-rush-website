@@ -71,7 +71,7 @@ nav{
 
                 color: white;
                 text-decoration: none;
-				font-size: em(38);
+				font-size: em(30);
 				padding: em(8) em(10);
 				&:hover{
 					color: #fed136;
@@ -276,7 +276,15 @@ nav{
 	}
 }
 
+// ========================================================
+// Espacement des bouttons du portfolio pour les écrans en dessous de 400px
+// ========================================================
 
+@media screen and (max-width: 400px){
+	#portfolio article button{
+		position: static;
+	}
+}
 
 // ========================================================
 // Affichage bureau
