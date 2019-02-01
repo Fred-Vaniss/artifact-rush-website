@@ -1,6 +1,8 @@
 # Projet de reconstruction
 La page a été reconstruite sur base de [mon site de projet de fin d'étude](https://speedy-vongofast.github.io/artifact-rush-website/) afin de **supprimer toute dépendence avec Bootstrap**.
 
+**La nouvelle page de mon site peut être consulté ici**: https://fred-vaniss.github.io/artifact-rush-website/
+
 ## Avant, en 2017...
 Lors de la première création de mon site, je n'avais que les conaissances de base en développement Front End, je n'en savais pas assez pour coder un site complet, je m'étais juste basé sur un template Bootstrap. Je n'avais également aucune notion de responsive design, ce qui donnait un résultat catastrophique sur mobile.
 
