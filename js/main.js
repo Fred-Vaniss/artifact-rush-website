@@ -14,8 +14,9 @@ var body = document.getElementsByTagName("body")[0];
 const menu = tag("nav")[0];
 
 function showMenu(){
-    log("click")
-    menu.classList.toggle("dispMenu");
+    if(window.innerWidth < 768){
+        menu.classList.toggle("dispMenu");
+    }
 }
 
 /////////////////////////////////////////////////////
