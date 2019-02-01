@@ -1,506 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta name="theme-color" content="#222222">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Artifact Rush</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Theme CSS -->
-    <link href="css/agency.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Artifact Rush</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+<body>
+    <header id="navBar">
+        <div class="wrapper navBar">
+            <a href="#intro" class="titre"><h1>Artifact Rush</h1></a>
+            <button type="button" class="navMenuButton yelButton" onclick="showMenu()"><span>Menu</span> <i class="fas fa-bars"></i></button>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#presentation" onclick="showMenu()">Présentation</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#presentation">Présentation</a>
+                        <a href="#contenu" onclick="showMenu()">Contenu</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contenu">Contenu</a>
+                        <a href="#portfolio" onclick="showMenu()">Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Workshop</a>
+                        <a href="#jouer" onclick="showMenu()">Workshop</a>
                     </li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in"> <img src='img/header-logo.png'></div>
-                <div class="intro-lead-in"></div>
-           <!-- <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> -->
-            </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="presentation">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Un jeu de plateau à quatre joueurs avec des cartes à jouer.</h2>
-                    <hr class="light">
-                    <p class="text-faded">Vivez l'aventure de quatre héros en quête vers l'acquisition de l'artéfact magique afin de sauver la race humaine. Le premier arrivé avec l'artéfact aura la gloire et la fortune du royaume.</p>
-                    <p class="text-faded">Cependant, la récompense promise par le royaume pousse à la rivalité entre ces aventuriers.</p>
-                    <p class="text-faded">Parcourez ces terres périlleuses, trouvez des techniques et équipements, faites faces aux monstres et événements dangereux et ramenez l'artéfact.</p>
-                    <iframe width="780" height="439" src="https://www.youtube.com/embed/axYJRqUqfZ0" frameborder="0" allowfullscreen></iframe>
-                </div>
+    <section id="intro">
+        <div class="wrapper intro">
+            <h2 class="hidden">Introduction</h2> <!-- Ce titre est caché, il ne devrais pas y être mais la validation du W3C veut qu'il y ait un h2 -->
+            <div class="imgCont">
+                <img src="img/header-logo.png" alt="Logo Artifact Rush">
+            </div> <br>
+            <span class="scrollArrow animated bounce"><i class="fas fa-angle-down"></i></span>
+        </div>
+    </section>
+
+    <section id="presentation" class="section-spaces">
+        <div class="wrapper presentation">
+            <h2>Un jeu de plateau à quatre joueurs avec des cartes à jouer.</h2>
+            <hr>
+            <p>Vivez l'aventure de quatre héros en quête vers l'acquisition de l'artéfact magique afin de sauver la race humaine. Le premier arrivé avec l'artéfact aura la gloire et la fortune du royaume.</p>
+            <p>Cependant, la récompense promise par le royaume pousse à la rivalité entre ces aventuriers.</p>
+            <p>Parcourez ces terres périlleuses, trouvez des techniques et équipements, faites faces aux monstres et événements dangereux et ramenez l'artéfact.</p>
+            
+            <div class="aspect-ratio">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/axYJRqUqfZ0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="contenu" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contenu et fonctionnalités du jeu.</h2>
-                    <h3 class="section-subheading text-muted">Du contenu riche et varié qui fait de ce jeu une expérience unique.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Une grande variété de cartes</h4>
-                        <p class="text-muted">Il existe plus de 40 variétés de cartes et de plus de 100 cartes pour tous les paquets confondus.</p>
-                        <p class="text-muted">Des techniques, des équipements, des événements et les monstres.</p>  
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Une longue aventure</h4>
-                        <p class="text-muted">Entre 30 et 60 minutes de session de jeu voir même plus si l'aventure s'avère plus laborieuse.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Quatre personnages uniques</h4>
-                        <p class="text-muted">Chaque joueur joue son propre personnage avec ses traits uniques et sa propre histoire.</p>
-                    </div>
-                </div>
-            </div>
-            <!--<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div> -->
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Découvrez les images et captures d'écran de mon processus de création de mon jeu de société. <br/>  <br/> Cliquez sur une image pour en savoir plus.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/plateau-preview.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>La conception du plateau</h4>
-                        <p class="text-muted">Adobe Photoshop</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dessins-preview.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Création des cartes</h4>
-                        <p class="text-muted">Adobe Photoshop</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/pions-preview.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Création des pions</h4>
-                        <p class="text-muted">Photoshop et Blender</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/tabletop-preview.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Exportation du jeu de société</h4>
-                        <p class="text-muted">Tabletop Simulator</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/animation-preview.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>L'animation de présentation</h4>
-                        <p class="text-muted">Blender et Source Filmmaker</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/montage-preview.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Le montage de présentation</h4>
-                        <p class="text-muted">After Effect et Premiere Pro</p>
-                    </div>
-                </div>
+    <section id="contenu" class="section-spaces">
+        <div class="wrapper contenu">
+            <h2>Contenu et fonctionalités du jeu</h2>
+            <hr>
+            <h3>Du contenu riche et varié qui fait de ce jeu une expérience unique.</h3>
+            <div class="flex-articles">
+                <article>
+                    <img src="img/contenu/1.jpg" alt="">
+                    <h4>Une grande variété de cartes</h4>
+                    <p>Il existe plus de 40 variétés de cartes et de plus de 100 cartes pour tous les paquets confondus.</p>
+                    <p>Des techniques, des équipements, des événements et les monstres.</p>
+                </article>
+                <article>
+                    <img src="img/contenu/2.jpg" alt="">
+                    <h4>Une longue aventure</h4>
+                    <p>Entre 30 et 60 minutes de session de jeu voir même plus si l'aventure s'avère plus laborieuse.</p>
+                </article>
+                <article>
+                    <img src="img/contenu/3.jpg" alt="">
+                    <h4>Quatre personnages uniques</h4>
+                    <p>Chaque joueur joue son propre personnage avec ses traits uniques et sa propre histoire.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-	    <div class="container">
-	    	<div class="row">
-	    		<div class="col-lg-12 text-center">
-	    			<h2 class="section-heading">Jouez-y sur Tabletop Simulator</h2>
-	    			<p class="large text-muted" style= "color: white">Si vous possédez Tabletop Simulator, jouez-y dès maintenant en visitant la page Workshop du jeu!</p>
-
-
-	    		</div>
-	    	</div>
-
-	    	<div class="row">
-	    		<div class="col-lg-12 text-center">
-
-	    			<iframe src="https://store.steampowered.com/widget/286160/39685/?t=Tabletop%20Simulator%20est%20le%20seul%20jeu%20de%20simulation%20ou%20vous%20pouvez%20vous%20d%C3%A9fouler%20en%20retournant%20la%20table!%20Il%20n'y%20a%20aucune%20r%C3%A8gle%20%C3%A0%20suivre%3A%20juste%20vous%2C%20un%20bac%20%C3%A0%20sable%20physique%20et%20vos%20amis!%20Cr%C3%A9ez%20vos%20propres%20jeux%20et%20jouez%20comme%20vous%20voulez!%20Des%20possibilit%C3%A9s%20de%20jeux%20infinis!" frameborder="0" width="646" height="190"></iframe>
-
-	    			
-	    		</div>
-	    	</div>
-
-	    	<div class="row">
-	    		<div class="col-lg-12 text-center">
-	    			<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=843684827" class="page-scroll btn btn-default btn-xl sr-button" style="margin-top: 20px;">Visitez la page Workshop!</a>
-	    		</div>
-	    	</div>
-
-	    </div>
+    <section id="portfolio" class="section-spaces">
+        <div class="wrapper">
+            <h2>Portfolio</h2>
+            <hr>
+            <h3>Découvrez les images et captures d'écran de mon processus de création de mon jeu de société.</h3>
+            <h3>Cliquez sur une image pour en savoir plus.</h3>
+            <div class="flex-articles">
+                <article>
+                    <div class="imgCont">
+                        <img src="img/portfolio/preview-plateau.jpg" alt="">
+                    </div>
+                    <h4>La conception du plateau</h4>
+                    <p>Adobe Photoshop</p>
+                    <button class="yelButton" onclick='toggleModal("modBox1")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
+                </article>
+                <article>
+                    <div class="imgCont">
+                        <img src="img/portfolio/preview-dessins.jpg" alt="">
+                    </div>
+                    <h4>Création des cartes</h4>
+                    <p>Adobe Photoshop</p>
+                    <button class="yelButton" onclick='toggleModal("modBox2")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
+                </article>
+                <article>
+                    <div class="imgCont">
+                        <img src="img/portfolio/preview-pions.jpg" alt="">
+                    </div>
+                    <h4>Création des pions</h4>
+                    <p>Photoshop et Blender</p>
+                    <button class="yelButton" onclick='toggleModal("modBox3")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
+                </article>
+                <article>
+                    <div class="imgCont">
+                        <img src="img/portfolio/preview-tabletop.jpg" alt="">
+                    </div>
+                    <h4>Exportation du jeu de société</h4>
+                    <p>Tabletop Simulator</p>
+                    <button class="yelButton" onclick='toggleModal("modBox4")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
+                </article>
+                <article>
+                    <div class="imgCont">
+                        <img src="img/portfolio/preview-animation.jpg" alt="">
+                    </div>
+                    <h4>L'animation de présentation</h4>
+                    <p>Blender et Source Filmmaker</p>
+                    <button class="yelButton" onclick='toggleModal("modBox5")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
+                </article>
+                <article>
+                    <div class="imgCont">
+                        <img src="img/portfolio/preview-montage.jpg" alt="">
+                    </div>
+                    <h4>Le montage de présentation</h4>
+                    <p>After Effect et Premiere Pro</p>
+                    <button class="yelButton" onclick='toggleModal("modBox6")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
+                </article>
+            </div>
+        </div>
     </section>
-
+    <section id="jouer" class='section-spaces'>
+        <div class="jouer wrapper">
+            <h2>Jouez-y dès a présent sur Tabletop Simulator</h2>
+            <p>Si vous possédez Tabletop Simulator, jouez-y dès maintenant en visitant la page Workshop du jeu!</p>
+            <div class="steamFrame">            
+                <iframe class="steamFrame" src="https://store.steampowered.com/widget/286160/39685/?t=Tabletop%20Simulator%20est%20le%20seul%20jeu%20de%20simulation%20ou%20vous%20pouvez%20vous%20d%C3%A9fouler%20en%20retournant%20la%20table!%20Il%20n'y%20a%20aucune%20r%C3%A8gle%20%C3%A0%20suivre%3A%20juste%20vous%2C%20un%20bac%20%C3%A0%20sable%20physique%20et%20vos%20amis!%20Cr%C3%A9ez%20vos%20propres%20jeux%20et%20jouez%20comme%20vous%20voulez!%20Des%20possibilit%C3%A9s%20de%20jeux%20infinis!" width="646" height="190"></iframe> <br>
+            </div>
+            <a class="yelButton"  href="#">Visitez la page Workshop!</a>
+        </div>
+    </section>
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Créé par Frédérick Van Isschot, TFE 2017</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                <!--    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li> -->
-                        <li><a href="http://www.linkedin.com/in/frédérick-van-isschot-09a083139"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <p>Créé par Frédérick Van Isschot, TFE 2017, UX Webdesign 2019</p>
+        <p><a href="#"><i class="fab fa-linkedin"></i></a></p>
     </footer>
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <!-- =================================================== -->
+    <!--                    Boites modal                     -->
+    <!-- =================================================== -->
 
-	    <!-- Portfolio Modal 1: Conception du plateau -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog">
-	            <div class="modal-content">
-	                <div class="close-modal" data-dismiss="modal">
-	                    <div class="lr">
-	                        <div class="rl">
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="container">
-	                    <div class="row">
-	                        <div class="col-lg-8 col-lg-offset-2">
-	                            <div class="modal-body">
-	                                <!-- Project Details Go Here -->
-	                                <h2>La conception de mon plateau</h2>
-	                                <p class="item-intro text-muted">Cliquez sur une image pour l'agrandir.</p>
-	                                <a href="img/portfolio/plateau.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/plateau.png" alt=""></a>
-	                                <p>La conception de mon plateau s'est faite en plusieurs étapes, d'abord j'ai créé les cases à l'aide d'Adobe Illustrator pour avoir de belles courbes tout au long des cases. Ensuite à l'aide de Blender, j'ai fait un rendu de l'herbe sur un fond transparent dont j'ai ensuite dupliqué sur tout le chemin pour avoir un résultat homogène et bien intégré au décor.</p>
-	                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fermer</button>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
+    <article class="modalBox" id="modBox1">
+        <button class="modal-close-btn" onclick='toggleModal("modBox1")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>La conception de mon plateau</h2>
+            <a href="img/portfolio/plateau.png" class="img-link" target="_blank"><img src="img/portfolio/plateau.png" alt=""></a>
+            <p>La conception de mon plateau s'est faite en plusieurs étapes, d'abord j'ai créé les cases à l'aide d'Adobe Illustrator pour avoir de belles courbes tout au long des cases. Ensuite à l'aide de Blender, j'ai fait un rendu de l'herbe sur un fond transparent dont j'ai ensuite dupliqué sur tout le chemin pour avoir un résultat homogène et bien intégré au décor.</p>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox1")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
 
-	    <!-- Portfolio Modal 2: Création des cartes -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog">
-	            <div class="modal-content">
-	                <div class="close-modal" data-dismiss="modal">
-	                    <div class="lr">
-	                        <div class="rl">
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="container">
-	                    <div class="row">
-	                        <div class="col-lg-8 col-lg-offset-2">
-	                            <div class="modal-body">
-	                                <h2>Création des cartes</h2>
-	                                <p class="item-intro text-muted">Cliquez sur une image pour l'agrandir.</p>
-	                                <a href="img/portfolio/dessins.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/dessins.png" alt=""></a>
-	                                <p>Les illustrations sont dessinées à la main à l'aide d'une tablette graphique Wacom Bamboo. Les coloriages sont faits sur un calque séparé et des ombres et lumières sont appliquées grâce à un calque en lumière tamisée à 75%.</p>
-	                                <a href="img/portfolio/dessins2.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/dessins2.png" alt=""></a>
-	                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fermer</button>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
+    <article class="modalBox" id="modBox2">
+        <button class="modal-close-btn" onclick='toggleModal("modBox2")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>Création des cartes</h2>
+            <a href="img/portfolio/dessins.png" class="img-link" targer="_blank"><img src="img/portfolio/dessins.png" alt=""></a>
+            <p>Les illustrations sont dessinées à la main à l'aide d'une tablette graphique Wacom Bamboo. Les coloriages sont faits sur un calque séparé et des ombres et lumières sont appliquées grâce à un calque en lumière tamisée à 75%.</p>
+            <a href="img/portfolio/dessins2.png" class="img-link" targer="_blank"><img src="img/portfolio/dessins2.png" alt=""></a>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox2")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
+    
+    <article class="modalBox" id="modBox3">
+        <button class="modal-close-btn" onclick='toggleModal("modBox3")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>Création des pions</h2>
+            <a class="img-link" href="img/portfolio/pion1.png" target="_blank"><img src="img/portfolio/pion1.png" alt=""></a>
+            <p>Après avoir dessiné le personnage, j'ai créé une extrusion 3D via Photoshop qui me servira de modèle 3D pour Blender.</p>
+            <a class="img-link" href="img/portfolio/pion2.png" target="_blank"><img src="img/portfolio/pion2.png" alt=""></a>
+            <p>Ensuite, sur Blender, j'ai ajusté l'épaisseur de l'illustration et modélisé le socle où elle sera posée.</p>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox3")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
 
-	    <!-- Portfolio Modal 3: Création des pions -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog">
-	            <div class="modal-content">
-	                <div class="close-modal" data-dismiss="modal">
-	                    <div class="lr">
-	                        <div class="rl">
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="container">
-	                    <div class="row">
-	                        <div class="col-lg-8 col-lg-offset-2">
-	                            <div class="modal-body">
-	                                <!-- Project Details Go Here -->
-	                                <h2>Création des pions</h2>
-	                                <p class="item-intro text-muted">Cliquez sur une image pour l'agrandir.</p>
-	                                <a href="img/portfolio/pion1.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/pion1.png" alt=""></a>
-	                                <p>Après avoir dessiné le personnage, j'ai créé une extrusion 3D via Photoshop qui me servira de modèle 3D pour Blender.</p>
-	                                <a href="img/portfolio/pion2.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/pion2.png" alt=""></a>
-	                                <p>Ensuite, sur Blender, j'ai ajusté l'épaisseur de l'illustration et modélisé le socle où elle sera posée.</p>
-	                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Fermer</button>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
+    <article class="modalBox" id="modBox4">
+        <button class="modal-close-btn" onclick='toggleModal("modBox4")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>Exportation sur Tabletop Simulator</h2>
+            <a class="img-link" href="https://store.steampowered.com/app/286160/Tabletop_Simulator/" target="_blank"><img src="img/portfolio/tabletop-logo.png" alt=""></a>
+            <p>Tabletop Simulator est un simulateur de jeu de société qui permet d'importer ses propres créations. Les jeux fonctionnent sans script, tout se joue manuellement comme dans la vraie vie en manipulant chaque objet physique manuellement.</p>
+            <a class="img-link" href="img/portfolio/tabletop1.jpg" target="_blank"><img src="img/portfolio/tabletop1.jpg" alt=""></a>
+            <p>Ensuite, sur Blender, j'ai ajusté l'épaisseur de l'illustration et modélisé le socle où elle sera posée.</p>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox4")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
 
-	    <!-- Portfolio Modal 4: Exportation sur Tabletop -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog">
-	            <div class="modal-content">
-	                <div class="close-modal" data-dismiss="modal">
-	                    <div class="lr">
-	                        <div class="rl">
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="container">
-	                    <div class="row">
-	                        <div class="col-lg-8 col-lg-offset-2">
-	                            <div class="modal-body">
-	                                <!-- Project Details Go Here -->
-	                                <h2>Exportation sur Tabletop Simulator</h2>
-	                                <p class="item-intro text-muted">Cliquez sur une image pour l'agrandir</p>
-	                                <img class="img-responsive img-centered" src="img/portfolio/tabletop-logo.png" alt="">
-	                                <p>Tabletop Simulator est un simulateur de jeu de société qui permet d'importer ses propres créations. Les jeux fonctionnent sans script, tout se joue manuellement comme dans la vraie vie en manipulant chaque objet physique manuellement.</p>
-	                                <a href="img/portfolio/tabletop1.jpg" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/tabletop1.jpg" alt=""></a>
-	                                <iframe src="https://store.steampowered.com/widget/286160/39685/?t=Tabletop%20Simulator%20est%20le%20seul%20jeu%20de%20simulation%20ou%20vous%20pouvez%20vous%20d%C3%A9fouler%20en%20retournant%20la%20table!%20Il%20n'y%20a%20aucune%20r%C3%A8gle%20%C3%A0%20suivre%3A%20juste%20vous%2C%20un%20bac%20%C3%A0%20sable%20physique%20et%20vos%20amis!%20Cr%C3%A9ez%20vos%20propres%20jeux%20et%20jouez%20comme%20vous%20voulez!%20Des%20possibilit%C3%A9s%20de%20jeux%20infinis!" frameborder="0" width="646" height="190"></iframe>
-	                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
+    <article class="modalBox" id="modBox5">
+        <button class="modal-close-btn" onclick='toggleModal("modBox5")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>L'animation de présentation</h2>
+            <a class="img-link" href="https://store.steampowered.com/app/1840/Source_Filmmaker/" target="_blank"><img src="img/portfolio/sfm_logo_over.png" alt=""></a>
+            <p>L'animation est réalisée à l'aide de Source Filmmaker, un programme purement destiné à l'animation 3D qui exploite le Source Engine utilisé dans les jeux vidéo tel que Half-Life 2, Team Fortress 2 et d'autres jeux créés par Valve.</p>
+            <a class="img-link" href="img/portfolio/animation1.png" target="_blank"><img src="img/portfolio/animation1.png" alt=""></a>
+            <p>Si j'ai choisi Source Filmmaker, c'est parce que c'est le programme d'animation que j'ai le plus utilisé et qu'il à des modèles de personnages 3D libre de droit dont j'ai exploité dans mon animation de présentation sous l'accord de mon professeur.</p>
+            <a class="img-link" href="img/portfolio/animation2.png" target="_blank"><img src="img/portfolio/animation2.png" alt=""></a>
+            <p>C'était sans doute l'étape la plus laborieuse de mon projet, car il fallait que je convertisse chacun de mes modèles 3D et mes textures dans un format compatible avec le Source Engine.</p>
+            <a class="img-link" href="img/portfolio/animation3.png" target="_blank"><img src="img/portfolio/animation3.png" alt=""></a>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox5")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
 
-	    <!-- Portfolio Modal 5: L'animation de présentation -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog">
-	            <div class="modal-content">
-	                <div class="close-modal" data-dismiss="modal">
-	                    <div class="lr">
-	                        <div class="rl">
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="container">
-	                    <div class="row">
-	                        <div class="col-lg-8 col-lg-offset-2">
-	                            <div class="modal-body">
-	                                <!-- Project Details Go Here -->
-	                                <h2>L'animation de présentation</h2>
-	                                <p class="item-intro text-muted">Cliquez sur une image pour l'agrandir</p>
-	                                <img class="img-responsive img-centered" src="img/portfolio/sfm_logo_over.png">
-	                                
-	                                <p>L'animation est réalisée à l'aide de Source Filmmaker, un programme purement destiné à l'animation 3D qui exploite le Source Engine utilisé dans les jeux vidéo tel que Half-Life 2, Team Fortress 2 et d'autres jeux créés par Valve.</p>
+    <article class="modalBox" id="modBox6">
+        <button class="modal-close-btn" onclick='toggleModal("modBox6")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>Le montage de présentation</h2>
+            <a class="img-link" href="img/portfolio/montage1.png" target="_blank"><img src="img/portfolio/montage1.png" alt=""></a>
+            <p>L'assemblage et le compositing sont faits à l'aide d'Adobe After Effect. Le montage sonore ainsi que le rendu final sont faits grâce à Adobe Première Pro.</p>
+            <a class="img-link" href="img/portfolio/montage2.png" target="_blank"><img src="img/portfolio/montage2.png" alt=""></a>
+            <p>Le gros avantage avec ces deux programmes est le fait qu’ils peuvent gérer les fichiers d’un autre, par exemple j’ai pu utiliser mes montages sur After Effect directement dans Première Pro sans devoir faire de rendu ou quoi que ce soit et les modifications effectuées sur After Effect sera automatiquement prise en compte sur Première Pro. Ce qui donne un gain de temps considérable et empêche une perte de qualité due a un double rendu.</p>
+            <a class="img-link" href="img/portfolio/montage3.png" target="_blank"><img src="img/portfolio/montage3.png" alt=""></a>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox6")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
 
-	                                <a href="img/portfolio/animation1.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/animation1.png" alt=""></a>
-
-	                                <p>Si j'ai choisi Source Filmmaker, c'est parce que c'est le programme d'animation que j'ai le plus utilisé et qu'il à des modèles de personnages 3D libre de droit dont j'ai exploité dans mon animation de présentation sous l'accord de mon professeur.</p>
-
-	                                <a href="img/portfolio/animation2.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/animation2.png" alt=""></a>
-
-	                                <p>C'était sans doute l'étape la plus laborieuse de mon projet, car il fallait que je convertisse chacun de mes modèles 3D et mes textures dans un format compatible avec le Source Engine.</p>
-
-	                                <a href="img/portfolio/animation3.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/animation3.png" alt=""></a>
-
-	                                <iframe src="https://store.steampowered.com/widget/1840/" frameborder="0" width="646" height="190"></iframe>
-
-	                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-
-	    <!-- Portfolio Modal 6: Le montage de présentation -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog">
-	            <div class="modal-content">
-	                <div class="close-modal" data-dismiss="modal">
-	                    <div class="lr">
-	                        <div class="rl">
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="container">
-	                    <div class="row">
-	                        <div class="col-lg-8 col-lg-offset-2">
-	                            <div class="modal-body">
-	                                <!-- Project Details Go Here -->
-	                                <h2>Le montage de présentation</h2>
-	                                <p class="item-intro text-muted">Cliquez sur une image pour l'agrandir</p>
-	                                <a href="img/portfolio/montage1.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/montage1.png" alt=""></a>
-	                                <p>L'assemblage et le compositing sont faits à l'aide d'Adobe After Effect. Le montage sonore ainsi que le rendu final sont faits grâce à Adobe Première Pro.</p>
-
-	                                <a href="img/portfolio/montage2.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/montage2.png" alt=""></a>
-
-	                                <p>Le gros avantage avec ces deux programmes est le fait qu’ils peuvent gérer les fichiers d’un autre, par exemple j’ai pu utiliser mes montages sur After Effect directement dans Première Pro sans devoir faire de rendu ou quoi que ce soit et les modifications effectuées sur After Effect sera automatiquement prise en compte sur Première Pro. Ce qui donne un gain de temps considérable et empêche une perte de qualité due a un double rendu.</p>
-
-	                                <a href="img/portfolio/montage3.png" target="_blank"><img class="img-responsive img-centered" src="img/portfolio/montage3.png" alt=""></a>
-	                                
-	                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
-
+    <script src="js/main.js"></script>
 </body>
-
 </html>

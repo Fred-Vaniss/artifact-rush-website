@@ -1,0 +1,25 @@
+//Ce SCSS regroupera tous les codes de base pour le bon fonctionnement du site
+//Il sera exporté au début de style.scss
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900');
+//font-family: 'Roboto', sans-serif;
+
+@font-face {
+    font-family: "Andalus";
+    src: url(../fonts/andlso.ttf) format("truetype");
+}
+//font-family: 'Andalus', serif;
+
+html{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
