@@ -1,3 +1,3 @@
-# Site en reconstruction
+# Code originale du site
 
-Ce site va être reconstruit pour retirer toute dépendance avec Bootstrap
+Le site basée d'un template pré-construit de Bootstrap.
