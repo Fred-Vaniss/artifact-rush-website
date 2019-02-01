@@ -12,6 +12,14 @@
     padding: em(12,13) em(10,13);
 
     cursor: pointer;
+
+    &:hover{
+        background-color: #fbde73;
+    }
+
+    &:active{
+        background-color: #c09f26;
+    }
 }
 
 h2{

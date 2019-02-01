@@ -120,7 +120,7 @@
                     </div>
                     <h4>Exportation du jeu de société</h4>
                     <p>Tabletop Simulator</p>
-                    <button class="yelButton">En savoir plus <i class="fas fa-arrow-up"></i></button>
+                    <button class="yelButton" onclick='toggleModal("modBox4")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
                 </article>
                 <article>
                     <div class="imgCont">
@@ -128,7 +128,7 @@
                     </div>
                     <h4>L'animation de présentation</h4>
                     <p>Blender et Source Filmmaker</p>
-                    <button class="yelButton">En savoir plus <i class="fas fa-arrow-up"></i></button>
+                    <button class="yelButton" onclick='toggleModal("modBox5")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
                 </article>
                 <article>
                     <div class="imgCont">
@@ -136,7 +136,7 @@
                     </div>
                     <h4>Le montage de présentation</h4>
                     <p>After Effect et Premiere Pro</p>
-                    <button class="yelButton">En savoir plus <i class="fas fa-arrow-up"></i></button>
+                    <button class="yelButton" onclick='toggleModal("modBox6")'>En savoir plus <i class="fas fa-arrow-up"></i></button>
                 </article>
             </div>
         </div>
@@ -164,7 +164,7 @@
         <button class="modal-close-btn" onclick='toggleModal("modBox1")'><i class="far fa-times-circle"></i></button>
         <div class="modal-wrapper">
             <h2>La conception de mon plateau</h2>
-            <img src="img/portfolio/plateau.png" alt="">
+            <a href="img/portfolio/plateau.png" class="img-link" target="_blank"><img src="img/portfolio/plateau.png" alt=""></a>
             <p>La conception de mon plateau s'est faite en plusieurs étapes, d'abord j'ai créé les cases à l'aide d'Adobe Illustrator pour avoir de belles courbes tout au long des cases. Ensuite à l'aide de Blender, j'ai fait un rendu de l'herbe sur un fond transparent dont j'ai ensuite dupliqué sur tout le chemin pour avoir un résultat homogène et bien intégré au décor.</p>
             <button class="modal-close-bottom" onclick='toggleModal("modBox1")'><i class="fas fa-times"></i> Fermer</button>
         </div>
@@ -174,9 +174,9 @@
         <button class="modal-close-btn" onclick='toggleModal("modBox2")'><i class="far fa-times-circle"></i></button>
         <div class="modal-wrapper">
             <h2>Création des cartes</h2>
-            <img src="img/portfolio/dessins.png" alt="">
+            <a href="img/portfolio/dessins.png" class="img-link" targer="_blank"><img src="img/portfolio/dessins.png" alt=""></a>
             <p>Les illustrations sont dessinées à la main à l'aide d'une tablette graphique Wacom Bamboo. Les coloriages sont faits sur un calque séparé et des ombres et lumières sont appliquées grâce à un calque en lumière tamisée à 75%.</p>
-            <img src="img/portfolio/dessins2.png" alt="">
+            <a href="img/portfolio/dessins2.png" class="img-link" targer="_blank"><img src="img/portfolio/dessins2.png" alt=""></a>
             <button class="modal-close-bottom" onclick='toggleModal("modBox2")'><i class="fas fa-times"></i> Fermer</button>
         </div>
     </article>
@@ -185,11 +185,51 @@
         <button class="modal-close-btn" onclick='toggleModal("modBox3")'><i class="far fa-times-circle"></i></button>
         <div class="modal-wrapper">
             <h2>Création des pions</h2>
-            <img src="img/portfolio/pion1.png" alt="">
+            <a class="img-link" href="img/portfolio/pion1.png" target="_blank"><img src="img/portfolio/pion1.png" alt=""></a>
             <p>Après avoir dessiné le personnage, j'ai créé une extrusion 3D via Photoshop qui me servira de modèle 3D pour Blender.</p>
-            <img src="img/portfolio/pion2.png" alt="">
+            <a class="img-link" href="img/portfolio/pion2.png" target="_blank"><img src="img/portfolio/pion2.png" alt=""></a>
             <p>Ensuite, sur Blender, j'ai ajusté l'épaisseur de l'illustration et modélisé le socle où elle sera posée.</p>
             <button class="modal-close-bottom" onclick='toggleModal("modBox3")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
+
+    <article class="modalBox" id="modBox4">
+        <button class="modal-close-btn" onclick='toggleModal("modBox4")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>Exportation sur Tabletop Simulator</h2>
+            <a class="img-link" href="https://store.steampowered.com/app/286160/Tabletop_Simulator/" target="_blank"><img src="img/portfolio/tabletop-logo.png" alt=""></a>
+            <p>Tabletop Simulator est un simulateur de jeu de société qui permet d'importer ses propres créations. Les jeux fonctionnent sans script, tout se joue manuellement comme dans la vraie vie en manipulant chaque objet physique manuellement.</p>
+            <a class="img-link" href="img/portfolio/tabletop1.jpg" target="_blank"><img src="img/portfolio/tabletop1.jpg" alt=""></a>
+            <p>Ensuite, sur Blender, j'ai ajusté l'épaisseur de l'illustration et modélisé le socle où elle sera posée.</p>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox4")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
+
+    <article class="modalBox" id="modBox5">
+        <button class="modal-close-btn" onclick='toggleModal("modBox5")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>L'animation de présentation</h2>
+            <a class="img-link" href="https://store.steampowered.com/app/1840/Source_Filmmaker/" target="_blank"><img src="img/portfolio/sfm_logo_over.png" alt=""></a>
+            <p>L'animation est réalisée à l'aide de Source Filmmaker, un programme purement destiné à l'animation 3D qui exploite le Source Engine utilisé dans les jeux vidéo tel que Half-Life 2, Team Fortress 2 et d'autres jeux créés par Valve.</p>
+            <a class="img-link" href="img/portfolio/animation1.png" target="_blank"><img src="img/portfolio/animation1.png" alt=""></a>
+            <p>Si j'ai choisi Source Filmmaker, c'est parce que c'est le programme d'animation que j'ai le plus utilisé et qu'il à des modèles de personnages 3D libre de droit dont j'ai exploité dans mon animation de présentation sous l'accord de mon professeur.</p>
+            <a class="img-link" href="img/portfolio/animation2.png" target="_blank"><img src="img/portfolio/animation2.png" alt=""></a>
+            <p>C'était sans doute l'étape la plus laborieuse de mon projet, car il fallait que je convertisse chacun de mes modèles 3D et mes textures dans un format compatible avec le Source Engine.</p>
+            <a class="img-link" href="img/portfolio/animation3.png" target="_blank"><img src="img/portfolio/animation3.png" alt=""></a>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox5")'><i class="fas fa-times"></i> Fermer</button>
+        </div>
+    </article>
+
+    <article class="modalBox" id="modBox6">
+        <button class="modal-close-btn" onclick='toggleModal("modBox6")'><i class="far fa-times-circle"></i></button>
+        <div class="modal-wrapper">
+            <h2>Le montage de présentation</h2>
+            <a class="img-link" href="img/portfolio/montage1.png" target="_blank"><img src="img/portfolio/montage1.png" alt=""></a>
+            <p>L'assemblage et le compositing sont faits à l'aide d'Adobe After Effect. Le montage sonore ainsi que le rendu final sont faits grâce à Adobe Première Pro.</p>
+            <a class="img-link" href="img/portfolio/montage2.png" target="_blank"><img src="img/portfolio/montage2.png" alt=""></a>
+            <p>Le gros avantage avec ces deux programmes est le fait qu’ils peuvent gérer les fichiers d’un autre, par exemple j’ai pu utiliser mes montages sur After Effect directement dans Première Pro sans devoir faire de rendu ou quoi que ce soit et les modifications effectuées sur After Effect sera automatiquement prise en compte sur Première Pro. Ce qui donne un gain de temps considérable et empêche une perte de qualité due a un double rendu.</p>
+            <a class="img-link" href="img/portfolio/montage3.png" target="_blank"><img src="img/portfolio/montage3.png" alt=""></a>
+            <button class="modal-close-bottom" onclick='toggleModal("modBox6")'><i class="fas fa-times"></i> Fermer</button>
         </div>
     </article>
 
