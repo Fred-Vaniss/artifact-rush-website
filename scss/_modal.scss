@@ -51,13 +51,14 @@
 }
 
 .modal-close-btn{
+    z-index: 10;
 	background: none;
 	border: none;
 	font-size: em(50);
 
 	position: fixed;
-	top: em(2);
-	right: em(2);
+	top: em(4,50);
+	right: em(16,50);
 }
 
 .modal-close-btn:hover{
