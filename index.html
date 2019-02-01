@@ -88,7 +88,6 @@
             <h2>Portfolio</h2>
             <hr>
             <h3>Découvrez les images et captures d'écran de mon processus de création de mon jeu de société.</h3>
-            <h3>Cliquez sur une image pour en savoir plus.</h3>
             <div class="flex-articles">
                 <article>
                     <div class="imgCont">
@@ -161,7 +160,12 @@
     <!-- =================================================== -->
 
     <article class="modalBox" id="modBox1">
-        <button class="modal-close-btn" onclick='toggleModal("modBox1")'><i class="far fa-times-circle"></i></button>
+        <button class="modal-close-btn" onclick='toggleModal("modBox1")'>
+            <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-1x"></i>
+                <i class="far fa-times-circle fa-stack-1x"></i>
+            </span>
+        </button>
         <div class="modal-wrapper">
             <h2>La conception de mon plateau</h2>
             <a href="img/portfolio/plateau.png" class="img-link" target="_blank"><img src="img/portfolio/plateau.png" alt=""></a>
