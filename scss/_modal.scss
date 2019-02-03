@@ -15,11 +15,13 @@
     visibility: hidden;
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 
+    overflow-y: hidden;
+
     overflow: auto;
 }
 
 .modal-wrapper{
-    max-width: 860px;
+    width: 100%;
     margin: 0 auto;
     padding: 15px;
 
@@ -61,14 +63,32 @@
 
 	position: fixed;
 	top: em(4,50);
-	right: em(16,50);
+    right: em(16,50);
+}
+
+.far{
+    background-color: white;
+    border-radius: em(10,50);
+    padding: em(6,50) em(2,50) em(2,50) em(2,50);
 }
 
 .modal-close-btn:hover{
 	color: #fed136;
 }
 
-@media screen and (min-width: 955px){
+@media screen and (min-width: 1000px){
+    .modal-wrapper{
+        // width: unset;
+        max-width: 860px;
+        h2{
+            margin-top: em(20,40);
+        }
+    }
+
+    .far{
+        background-color: transparent;
+    }
+
     .modal-close-btn{
         color: white;
     }
