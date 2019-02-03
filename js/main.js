@@ -38,3 +38,33 @@ function toggleModal(modBoxSel){
         }
     });
 }
+
+/////////////////////////////////////////////////////
+// Scroll Spy
+//
+
+var isInViewport = function (elem) {
+	var distance = elem.getBoundingClientRect();
+	return (
+		distance.top <= 0
+	);
+};
+
+var pres = document.getElementById("presentation")
+var cont = document.getElementById("contenu")
+var port = document.getElementById("portfolio")
+var joue = document.getElementById("jouer")
+
+window.addEventListener('scroll', function (event) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        console.log('Jouer is in viewport!');
+    } else if (isInViewport(port)) {
+        console.log('Port is in viewport!');
+    } else if (isInViewport(cont)) {
+        console.log('Contenu is in viewport!');
+    } else if (isInViewport(pres)){
+		console.log('Presentation is in viewport!');
+    } else {
+    console.log('Nope...')
+    }
+}, false);
