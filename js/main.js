@@ -43,28 +43,58 @@ function toggleModal(modBoxSel){
 // Scroll Spy
 //
 
-var isInViewport = function (elem) {
-	var distance = elem.getBoundingClientRect();
+let isInViewport = function (elem) {
+	let distance = elem.getBoundingClientRect();
 	return (
 		distance.top <= 0
 	);
 };
 
-var pres = document.getElementById("presentation")
-var cont = document.getElementById("contenu")
-var port = document.getElementById("portfolio")
-var joue = document.getElementById("jouer")
+
+var ident = document.getElementById.bind(document)
+let pres = "presentation"
+let cont = "contenu"
+let port = "portfolio"
+let joue = "jouer"
 
 window.addEventListener('scroll', function (event) {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        console.log('Jouer is in viewport!');
-    } else if (isInViewport(port)) {
-        console.log('Port is in viewport!');
-    } else if (isInViewport(cont)) {
-        console.log('Contenu is in viewport!');
-    } else if (isInViewport(pres)){
-		console.log('Presentation is in viewport!');
+        switchHighlight(joue);
+    } else if (isInViewport(ident(port))) {
+        switchHighlight(port);
+    } else if (isInViewport(ident(cont))) {
+        switchHighlight(cont);
+    } else if (isInViewport(ident(pres))){
+		switchHighlight(pres);
     } else {
-    console.log('Nope...')
+        switchHighlight("none");
     }
 }, false);
+
+let highlight
+let highlightDom
+
+function switchHighlight (elem) {
+    let link = "link"+elem
+    let linkDom = ident(link)
+
+    if (elem == "none"){
+        if (highlight != "none" && highlight != undefined){
+            highlightDom.classList.remove("curScroll")
+            highlight = "none"
+        }
+    } else {
+        if (highlight != link){
+            log("do")
+            linkDom.classList.add("curScroll")
+            if (highlight == undefined || highlight == "none"){
+                highlight = link
+                highlightDom = linkDom
+            } else {
+                highlightDom.classList.remove("curScroll")
+                highlight = link
+                highlightDom = linkDom
+            }
+        }
+    }
+}
