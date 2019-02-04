@@ -16,8 +16,6 @@
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 
     overflow-y: hidden;
-
-    overflow: auto;
 }
 
 .modal-wrapper{
@@ -54,22 +52,29 @@
         margin-bottom: em(30);
     }
 }
+.modal-button-fixer{
+    position: fixed;
+    z-index: 10;
+    top: em(10); left: 0;
+    width: 100%; 
+}
+.modal-button-wrapper{
+    max-width: em(980);
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
 
 .modal-close-btn{
-    z-index: 10;
 	background: none;
 	border: none;
-	font-size: em(50);
-
-	position: fixed;
-	top: em(4,50);
-    right: em(16,50);
+    font-size: em(50);  
 }
 
 .far{
     background-color: white;
     border-radius: em(10,50);
-    padding: em(6,50) em(2,50) em(2,50) em(2,50);
+    padding: em(6,50) em(10,50) em(4,50) em(4,50);
 }
 
 .modal-close-btn:hover{
@@ -87,6 +92,7 @@
 
     .far{
         background-color: transparent;
+        padding: 0;
     }
 
     .modal-close-btn{
@@ -118,7 +124,7 @@
 .show-modal-bg{
     opacity: 1;
     visibility: visible;
-    overflow-y: auto;
+    overflow-y: scroll;
     transition: visibility 0s linear 0s, opacity 0.25s 0s;
 }
 
