@@ -2,10 +2,10 @@
 
 const log = console.log
 
-var id = document.getElementById.bind(document);
-var clas = document.getElementsByClassName.bind(document);
-var tag = document.getElementsByTagName.bind(document);
-var body = document.getElementsByTagName("body")[0];
+var id =    document.getElementById.bind(document);
+var clas =  document.getElementsByClassName.bind(document);
+var tag =   document.getElementsByTagName.bind(document);
+var body =  tag("body")[0];
 
 /////////////////////////////////////////////////////
 // Affichage du menu
