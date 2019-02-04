@@ -76,7 +76,7 @@ let joue = "jouer"
 
 // Détection des différentes sections
 window.addEventListener('scroll', function (event) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight || isInViewport(id(joue))) {
         switchHighlight(joue);
     } else if (isInViewport(id(port))) {
         switchHighlight(port);
