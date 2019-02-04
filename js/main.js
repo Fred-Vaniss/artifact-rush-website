@@ -11,11 +11,28 @@ var body = document.getElementsByTagName("body")[0];
 // Affichage du menu
 //
 
+const header = tag("header")[0];
 const menu = tag("nav")[0];
+const menuButton = clas("navMenuButton")[0];
+let menuDisp = false;
 
 function showMenu(){
-    if(window.innerWidth < 768){
-        menu.classList.toggle("dispMenu");
+    if (menuDisp === false){
+        menu.classList.add("dispMenu");
+        document.addEventListener("click", outsideClose);
+        menuDisp = true;
+    } else{
+        menu.classList.remove("dispMenu")
+        document.removeEventListener("click", outsideClose);
+        menuDisp = false;
+    }
+}
+
+function outsideClose(event){
+    if (event.composedPath().includes(menu) === false && event.composedPath().includes(menuButton) === false){
+        menu.classList.remove("dispMenu");
+        document.removeEventListener("click", outsideClose);
+        menuDisp = false;
     }
 }
 
