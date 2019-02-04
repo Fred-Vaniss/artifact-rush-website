@@ -40,43 +40,45 @@ function toggleModal(modBoxSel){
 }
 
 /////////////////////////////////////////////////////
-// Scroll Spy
+// Scrollspy
 //
 
+// Condition du scrollspy condensé dans une fonction (utilisé dans le scroll event listener)
 let isInViewport = function (elem) {
 	let distance = elem.getBoundingClientRect();
 	return (
-		distance.top <= 0
+		distance.top <= 300
 	);
 };
 
-
-var ident = document.getElementById.bind(document)
+// Variables des différentes sections de la page
 let pres = "presentation"
 let cont = "contenu"
 let port = "portfolio"
 let joue = "jouer"
 
+// Détection des différentes sections
 window.addEventListener('scroll', function (event) {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         switchHighlight(joue);
-    } else if (isInViewport(ident(port))) {
+    } else if (isInViewport(id(port))) {
         switchHighlight(port);
-    } else if (isInViewport(ident(cont))) {
+    } else if (isInViewport(id(cont))) {
         switchHighlight(cont);
-    } else if (isInViewport(ident(pres))){
+    } else if (isInViewport(id(pres))){
 		switchHighlight(pres);
     } else {
         switchHighlight("none");
     }
 }, false);
 
+// Changement des styles des bouttons de navigation
 let highlight
 let highlightDom
 
 function switchHighlight (elem) {
     let link = "link"+elem
-    let linkDom = ident(link)
+    let linkDom = id(link)
 
     if (elem == "none"){
         if (highlight != "none" && highlight != undefined){
@@ -85,7 +87,6 @@ function switchHighlight (elem) {
         }
     } else {
         if (highlight != link){
-            log("do")
             linkDom.classList.add("curScroll")
             if (highlight == undefined || highlight == "none"){
                 highlight = link
